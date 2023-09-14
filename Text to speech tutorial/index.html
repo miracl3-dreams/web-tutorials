@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Speech Tutorial</title>
+</head>
+<body>
+    <div class="wrapper">
+        <label for="text">Text to speak:</label>
+        <textarea id="text">Follow me thank you so much.</textarea>
+        <div class="properties">
+            <label for="voice">Voice:</label>
+            <select id="voice"></select>
+            <div></div>
+
+            <label for="pitch">Pitch:</label>
+            <input id="pitch" type="range" min="0.1" max="2" step="0.1" value="1">
+            <output for="pitch">1</output>
+
+            <label for="rate">Rate:</label>
+            <input id="rate" type="range" min="0.1" max="2" step="0.1" value="1">
+            <output for="rate">1</output>
+
+            <label for="volume">Volume:</label>
+            <input id="volume" type="range" min="0" max="1" step="0.1" value="1">
+            <output for="volume">1</output>
+        </div>
+        <button id="speak">Speak Text</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

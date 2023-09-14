@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-image: url(music.jpg);
+    color: white;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    backdrop-filter: blur(3px);
+    font: 1.25rem/1 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+    width: 600px;
+    max-width: calc(100vw - 40px);
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#text {
+    background-color: black;
+    color: white;
+    display: block;
+    height: 100px;
+    padding: 20px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+.properties {
+    display: grid;
+    grid-template-columns: max-content minmax(0, auto) 40px;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0003;
+    border-radius: 10px;
+}
+
+#voice {
+    font-size: 0.875rem;
+    font-family: inherit;
+    background-color: black;
+    color: white;
+}
+
+#speak {
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #0009;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 10px;
+}
